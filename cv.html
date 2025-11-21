@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Mark Ladringan</title>
+    <style>
+        body{
+            margin:0;
+            background:#0c1a22;
+            display:flex;
+            justify-content:center;
+            align-items:flex-start;
+            min-height:100vh;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow:auto;
+        }
+        .cvcontent{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:16px;
+            padding:30px;
+            width:100%;
+        }
+        .cvcontent img{
+            max-width:60vw;
+            max-height: none;
+            width:auto;
+            height:auto;
+            object-fit:contain;
+            border-radius:12px;
+            box-shadow:0 12px 30px rgba(0,0,0,0.35);
+            background:#132733;
+        }
+        .back-button{
+            position:fixed;
+            top:20px;
+            left:20px;
+            display:inline-flex;
+            align-items:center;
+            gap:8px;
+            padding:10px 16px;
+            border-radius:10px;
+            background:#55B0D1;
+            color:#0c1a22;
+            text-decoration:none;
+            font-weight:700;
+            box-shadow:0 6px 14px rgba(0,0,0,0.25);
+            transition:transform 0.15s ease, box-shadow 0.15s ease;
+            z-index:10;
+        }
+        .back-button:hover{
+            transform:translateY(-1px);
+            box-shadow:0 10px 18px rgba(0,0,0,0.25);
+        }
+    </style>
+</head>
+<body>
+    <div class="cvcontent">
+        <a class="back-button" href="index.html">← Back</a>
+        <img src="images/CV.png" alt="">
+    </div>
+</body>
+</html>
